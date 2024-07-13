@@ -19,6 +19,21 @@ body {
 .bg-light {
   background-color: rgba(255, 144, 14, 0.1);
 }
+.text-primary {
+  color: rgb(255, 144, 14);
+}
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+main > section {
+  margin-top: 130px;
+}
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+/* /* shared-style */
 
 .navbar {
   justify-content: space-between;
@@ -33,7 +48,6 @@ body {
 .nav-item {
   list-style: none;
   margin-right: 30px;
-  
 }
 .nav-link {
   text-decoration: none;
@@ -49,7 +63,7 @@ body {
   max-width: 862px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom:50px;
+  margin-bottom: 50px;
 }
 .banner-titile {
   font-weight: 700;
@@ -68,21 +82,58 @@ body {
   border-radius: 8px;
   background: rgb(255, 144, 14);
   color: rgb(255, 255, 255);
-font-size: 20px;
-font-weight: 600;
-line-height: 23px;
-letter-spacing: 0%;
-padding: 20px 25px;
-border: none;
-/* margin-bottom: 50px; */
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
+  padding: 20px 25px;
+  border: none;
+  /* margin-bottom: 50px; */
 }
-.banner-image{
-    width: 100%;
+.banner-image {
+  width: 100%;
 }
+/* =-=-=-=-teams-section=-=-=-=-= */
+
+.teams {
+  align-items: center;
+}
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.our-futures {
+  margin-left: 73px;
+  max-width: 530px;
+}
+#quick-list {
+  font-weight: 500;
+}
+
+.futures-description {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
 /* =-=-=-=-Reponsive=-=- */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-link{
+  .navbar,
+  .nav-link,
+  .teams {
+    flex-direction: column;
+  }
+  .team-img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* =-=-=--=-Medium=-=-=-=- */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    .teams {
         flex-direction: column;
+      }
+    .our-futures{
+        margin-left: 50px auto;
     }
-    
 }
