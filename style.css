@@ -121,7 +121,7 @@ main > section {
   font-size: 1.25rem;
   font-weight: 500;
   margin-top: -100px;
-  margin-left: -95px;
+  margin-left: -100px;
 }
 #Experience-year {
   font-size: 4rem;
@@ -200,8 +200,8 @@ main > section {
 }
 /* =-=-=-=-Footer=-=-=-=-=- */
 .footer {
-  max-width: 80%;
-  margin:0 auto;
+  max-width: 70%;
+  margin: 0 auto;
   border-radius: 8px;
   margin-top: 140px;
 }
@@ -227,8 +227,7 @@ main > section {
     grid-template-columns: repeat(1, 1fr);
   }
   #Experience-badge {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin: 10px auto;
   }
   .Facts-contaoner {
     justify-content: center;
@@ -246,15 +245,7 @@ main > section {
     gap: 50px;
     margin-left: 70px;
   }
-  
-  
-  /* .container {
-    padding: 5px 5px;
-   
-  } */
-
-   }
-
+}
 
 /* =-=-=--=-Medium=-=-=-=- */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -262,7 +253,7 @@ main > section {
   .features {
     flex-direction: column;
   }
- 
+
   .our-futures {
     margin-left: 50px auto;
   }
