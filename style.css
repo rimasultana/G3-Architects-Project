@@ -145,6 +145,23 @@ main > section {
 }
 .fact-description{
     max-width: 540px;
+    margin-top: 32px;
+    margin-bottom: 100px;
+}
+
+/* =-=-=-=-=-Sponsors-Related Styles=-=-=-= */
+
+.sponsor-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+.sponsors-company{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.sponsors-company img{
+  filter: grayscale(100%);
 }
 
 /* =-=-=-=-Reponsive=-=- */
@@ -154,8 +171,15 @@ main > section {
   .teams {
     flex-direction: column;
   }
-  .team-img-container {
+  .team-img-container, .Facts-contaoner {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .Facts-contaoner{
+    justify-content: center;
+    gap: 24px;
+  }
+  .Some-Facts{
+    margin-left: 50px;
   }
 }
 
