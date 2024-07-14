@@ -171,15 +171,27 @@ main > section {
   .teams {
     flex-direction: column;
   }
-  .team-img-container, .Facts-contaoner {
+  .team-img-container, 
+  .Facts-contaoner ,
+  .sponsors-company
+  {
     grid-template-columns: repeat(1, 1fr);
   }
   .Facts-contaoner{
     justify-content: center;
     gap: 24px;
   }
+
   .Some-Facts{
     margin-left: 50px;
+  }
+.sponsor-info{
+  margin:0 auto;
+}
+  .sponsors-company{
+    justify-content: center;
+    gap: 50px;
+    margin-left: 70px;
   }
 }
 
@@ -190,5 +202,10 @@ main > section {
   }
   .our-futures {
     margin-left: 50px auto;
+  }
+  .sponsors-company, .Facts-contaoner{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-content: center;
   }
 }
