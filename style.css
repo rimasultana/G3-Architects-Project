@@ -227,7 +227,7 @@ main > section {
     grid-template-columns: repeat(1, 1fr);
   }
   #Experience-badge {
-    margin: 10px auto;
+    margin: 5px auto;
   }
   .Facts-contaoner {
     justify-content: center;
